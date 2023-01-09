@@ -24,7 +24,7 @@ const imageUploadExtractLink = (req, res) => {
   })
   busboy.on("finish", () => {
     const Params = {
-      Bucket: "nodejs-image-upload",
+      Bucket: "commerse-products",
       Key: `${fName}`,
       Body: Buffer.concat(chunkImage),
       ServerSideEncryption: "AES256",
