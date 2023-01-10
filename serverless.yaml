@@ -17,3 +17,7 @@ functions:
           path: /app/multipleimagesupload
           method: POST
           cors: true
+      - http:
+          path: /app/multipleimagesuploadcommerseproducts
+          method: POST
+          cors: true 
