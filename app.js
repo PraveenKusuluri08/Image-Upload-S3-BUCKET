@@ -6,7 +6,7 @@ dotenv.config()
 const AWS = require("aws-sdk")
 const app = express()
 app.use(cors({origin:true}))
-app.use(express.json())
+app.use(express.json({limit:"500mb"}))
 
 AWS.config.update({
     accessKeyId:process.env.AWS_ACCESS_KEY_ID,
